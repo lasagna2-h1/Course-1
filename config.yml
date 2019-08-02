@@ -1,0 +1,17 @@
+title: Course #1
+tagline: '[Tagline]'
+description: '[Description]'
+template:
+  name: 'Course #1'
+  repo: Course
+steps:
+  - title: Comment on an issue
+    event: issue_comment.created
+    description: 'step description'
+    link: 'javascript:alert(1)'
+    actions:
+      - type: createIssue
+        title: New Issue
+        body: README.md
+        # Store the response for this new issue by assigning an action_id
+        action_id: new_issue
